@@ -6,6 +6,7 @@ function ex1() {
 
     // 2 : tính lương = lương 1 ngày * số ngày làm
     let wage = workDays * pay;
+    wage = new Intl.NumberFormat().format(wage);
 
     // 3 : in ra kết quả lương trên giao diện.
     document.getElementById('result1').value = wage;
@@ -24,6 +25,20 @@ function ex2() {
 
 //3 : in ra kết quả trên giao diện
     document.getElementById('result2').value = averate;
+    
+}
 
-    console.log(number1)
+// Bài tập 3
+function ex3() {
+    // 1 : lấy thông tin số tiền USD cần đổi và tỷ giá
+        let usd = +document.getElementById('usd').value;
+        let rate = +document.getElementById('rate').value;
+    
+        // 2 : tính quy đổi ra VND
+        let vnd = usd * rate;
+        vnd = new Intl.NumberFormat().format(vnd);
+        
+    
+        // 3 : in ra kết quả lương trên giao diện.
+        document.getElementById('result3').value =  vnd + ' dong';
 }
