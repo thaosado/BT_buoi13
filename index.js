@@ -25,7 +25,7 @@ function ex2() {
 
 //3 : in ra kết quả trên giao diện
     document.getElementById('result2').value = averate;
-    
+
 }
 
 // Bài tập 3
@@ -39,6 +39,21 @@ function ex3() {
         vnd = new Intl.NumberFormat().format(vnd);
         
     
-        // 3 : in ra kết quả lương trên giao diện.
+        // 3 : in ra kết quả quy đổi vnd trên giao diện.
         document.getElementById('result3').value =  vnd + ' dong';
 }
+
+//Bài tập 4
+function ex4(){
+    //1 : lấy thông tin chiều dài và chiều rộng nhập vào
+        let length = +document.getElementById('length').value;
+        let width = +document.getElementById('width').value;
+    
+    //2 : tính chu vi và diện tích hình chữ nhật
+        let perimeter = (length + width) * 2;
+        let acreage = length * width;
+
+    //3 : in ra kết quả chu vi và diện tích trên giao diện.
+        document.getElementById('result4').value = 'Chu vi : ' + perimeter + '; Diện tích : ' + acreage; 
+}
+
