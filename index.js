@@ -12,6 +12,8 @@ function ex1() {
     document.getElementById('result1').value = wage;
 }
 
+//Bài tập 2
+
 function ex2() {
 //1 : lấy thông tin các số thực người dùng nhập vào
     let number1 = +document.getElementById('number1').value;
@@ -40,7 +42,7 @@ function ex3() {
         
     
         // 3 : in ra kết quả quy đổi vnd trên giao diện.
-        document.getElementById('result3').value =  vnd + ' dong';
+        document.getElementById('result3').value =  vnd + ' đồng';
 }
 
 //Bài tập 4
@@ -57,3 +59,17 @@ function ex4(){
         document.getElementById('result4').value = 'Chu vi : ' + perimeter + '; Diện tích : ' + acreage; 
 }
 
+//Bài tập 5
+
+function ex5(){
+    //1 : lấy thông tin số nhập vào
+    let number = +document.getElementById('number').value;
+
+    //2: lấy ra từng số hàng chục và hàng đơn vị sau đó tính tổng 2 ký số
+    let numberOfTen = Math.floor(number / 10);
+    let numberOfUnit = Math.floor(number % 10);
+    let sum = numberOfTen + numberOfUnit;
+
+    //3 : in ra kết quả tính tổng 2 ký số trên giao diện
+    document.getElementById('result5').value = sum;
+}
